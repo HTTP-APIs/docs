@@ -1,0 +1,114 @@
+{
+  "config": {
+    "title": "Hydra Ecosystem Docs",
+    "description": "The docs for Hydra Ecosystem",
+    "menu": [],
+    "version": "0.1.0",
+    "repository": "https://github.com/http-apis/docs",
+    "native": false,
+    "themeConfig": {},
+    "separator": "-"
+  },
+  "entries": [
+    {
+      "key": "README.md",
+      "value": {
+        "id": "04c6e90faac2675aa89e2176d2eec7d8",
+        "filepath": "README.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/README.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/README.md",
+        "hidden": false,
+        "slug": "readme",
+        "route": "/readme",
+        "name": "Readme",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "-quick-start",
+            "depth": 2,
+            "value": "🚀 Quick start"
+          },
+          {
+            "slug": "🧐-whats-inside",
+            "depth": 2,
+            "value": "🧐 What's inside?"
+          },
+          {
+            "slug": "-learning-gatsby",
+            "depth": 2,
+            "value": "🎓 Learning Gatsby"
+          },
+          {
+            "slug": "-deploy",
+            "depth": 2,
+            "value": "💫 Deploy"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/content/index.md",
+      "value": {
+        "name": "Hello world",
+        "route": "/",
+        "id": "9af49f896d65b423034f08ebf99b5695",
+        "filepath": "src/content/index.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/index.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/index.md",
+        "hidden": false,
+        "slug": "src-content-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "hello-world",
+            "depth": 1,
+            "value": "Hello world"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/content/how-to-guides/frist.md",
+      "value": {
+        "name": "First How to Guide",
+        "menu": "How To Guides",
+        "id": "070409004a82927d8120fd9a0d24ef51",
+        "filepath": "src/content/how-to-guides/frist.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/how-to-guides/frist.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/how-to-guides/frist.md",
+        "hidden": false,
+        "slug": "src-content-how-to-guides-frist",
+        "route": "/src-content-how-to-guides-frist",
+        "headings": [
+          {
+            "slug": "first-how-to-guides",
+            "depth": 1,
+            "value": "First How to guides"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/content/tutorial/first.md",
+      "value": {
+        "name": "First Tutorial",
+        "menu": "Tutorial",
+        "id": "7e38d0e1827b6eb2d95595ac83502ae1",
+        "filepath": "src/content/tutorial/first.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/tutorial/first.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/tutorial/first.md",
+        "hidden": false,
+        "slug": "src-content-tutorial-first",
+        "route": "/src-content-tutorial-first",
+        "headings": [
+          {
+            "slug": "first-tutorial",
+            "depth": 1,
+            "value": "First Tutorial"
+          }
+        ]
+      }
+    }
+  ],
+  "props": []
+}
