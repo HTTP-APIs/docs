@@ -1,6 +1,5 @@
 ---
 name: Hello world
-route: /
 ---
 
 # Hello world

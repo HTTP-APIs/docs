@@ -11,58 +11,43 @@
   },
   "entries": [
     {
-      "key": "README.md",
-      "value": {
-        "id": "04c6e90faac2675aa89e2176d2eec7d8",
-        "filepath": "README.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/README.md",
-        "link": "https://github.com/http-apis/docs/edit/master/docs/README.md",
-        "hidden": false,
-        "slug": "readme",
-        "route": "/readme",
-        "name": "Readme",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "-quick-start",
-            "depth": 2,
-            "value": "🚀 Quick start"
-          },
-          {
-            "slug": "🧐-whats-inside",
-            "depth": 2,
-            "value": "🧐 What's inside?"
-          },
-          {
-            "slug": "-learning-gatsby",
-            "depth": 2,
-            "value": "🎓 Learning Gatsby"
-          },
-          {
-            "slug": "-deploy",
-            "depth": 2,
-            "value": "💫 Deploy"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/content/index.md",
+      "key": "src/content/quick-start.md",
       "value": {
         "name": "Hello world",
-        "route": "/",
-        "id": "9af49f896d65b423034f08ebf99b5695",
-        "filepath": "src/content/index.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/index.md",
-        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/index.md",
+        "id": "441c6b937ecf6e9a01d41eb2e295b2aa",
+        "filepath": "src/content/quick-start.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/quick-start.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/quick-start.md",
         "hidden": false,
-        "slug": "src-content-index",
+        "slug": "src-content-quick-start",
+        "route": "/src-content-quick-start",
         "menu": "",
         "headings": [
           {
             "slug": "hello-world",
             "depth": 1,
             "value": "Hello world"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/content/random.md",
+      "value": {
+        "name": "Random",
+        "id": "8589ed155293fb1c7106cd98a7600a00",
+        "filepath": "src/content/random.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/random.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/random.md",
+        "hidden": false,
+        "slug": "src-content-random",
+        "route": "/src-content-random",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "random-world",
+            "depth": 1,
+            "value": "Random World"
           }
         ]
       }
@@ -110,5 +95,17 @@
       }
     }
   ],
-  "props": []
+  "props": [
+    {
+      "key": "src/pages/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Home",
+          "methods": [],
+          "actualName": "Home"
+        }
+      ]
+    }
+  ]
 }
