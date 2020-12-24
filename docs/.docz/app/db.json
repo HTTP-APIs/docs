@@ -2,46 +2,47 @@
   "config": {
     "title": "Hydra Ecosystem Docs",
     "description": "The docs for Hydra Ecosystem",
-    "menu": [],
+    "menu": [
+      "Welcome to Hydra Ecosystem Docs",
+      {
+        "name": "Tutorial",
+        "menu": [
+          "First Tutorial"
+        ]
+      },
+      {
+        "name": "How To Guides",
+        "menu": [
+          "First How to Guide"
+        ]
+      }
+    ],
     "version": "0.1.0",
     "repository": "https://github.com/http-apis/docs",
     "native": false,
     "themeConfig": {},
-    "separator": "-"
+    "separator": "-",
+    "files": "**/*.{md,markdown,mdx}",
+    "ignore": [
+      "readme.md",
+      "changelog.md",
+      "code_of_conduct.md",
+      "contributing.md",
+      "license.md"
+    ]
   },
   "entries": [
     {
-      "key": "src/content/quick-start.md",
+      "key": "src/content/index.mdx",
       "value": {
-        "name": "Hello world",
-        "id": "441c6b937ecf6e9a01d41eb2e295b2aa",
-        "filepath": "src/content/quick-start.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/quick-start.md",
-        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/quick-start.md",
+        "name": "Welcome to Hydra Ecosystem Docs",
+        "route": "/",
+        "id": "3ad5a6c267090705c2a1170d35652329",
+        "filepath": "src/content/index.mdx",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/index.mdx",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/index.mdx",
         "hidden": false,
-        "slug": "src-content-quick-start",
-        "route": "/src-content-quick-start",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "hello-world",
-            "depth": 1,
-            "value": "Hello world"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/content/random.md",
-      "value": {
-        "name": "Random",
-        "id": "8589ed155293fb1c7106cd98a7600a00",
-        "filepath": "src/content/random.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/random.md",
-        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/random.md",
-        "hidden": false,
-        "slug": "src-content-random",
-        "route": "/src-content-random",
+        "slug": "src-content-index",
         "menu": "",
         "headings": [
           {
@@ -95,17 +96,5 @@
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/pages/index.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Home",
-          "methods": [],
-          "actualName": "Home"
-        }
-      ]
-    }
-  ]
+  "props": []
 }
