@@ -4,6 +4,7 @@
     "description": "The docs for Hydra Ecosystem",
     "menu": [
       "Welcome to Hydra Ecosystem Docs",
+      "Quickstart",
       {
         "name": "Tutorial",
         "menu": [
@@ -46,9 +47,30 @@
         "menu": "",
         "headings": [
           {
-            "slug": "welcome-to-hydra-ecosystem",
+            "slug": "welcome-to-hydra-ecosystem-documentation",
             "depth": 1,
-            "value": "Welcome To Hydra Ecosystem"
+            "value": "Welcome To Hydra Ecosystem Documentation"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/content/quickstart.md",
+      "value": {
+        "name": "Quickstart",
+        "id": "a021003eb870969f393873a11040aad4",
+        "filepath": "src/content/quickstart.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/quickstart.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/quickstart.md",
+        "hidden": false,
+        "slug": "src-content-quickstart",
+        "route": "/src-content-quickstart",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "quickstart-guide",
+            "depth": 1,
+            "value": "Quickstart Guide"
           }
         ]
       }
@@ -96,17 +118,5 @@
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/components/roadmap.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Roadmap",
-          "methods": [],
-          "actualName": "Roadmap"
-        }
-      ]
-    }
-  ]
+  "props": []
 }
