@@ -1,6 +1,11 @@
 import React from "react"
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
+import { CardHeader } from '@material-ui/core';
+import { Card } from '@material-ui/core';
+import { CardContent } from '@material-ui/core';
+
+
 const styles = {
     heading: {
         marginTop: "0",
@@ -14,12 +19,15 @@ const styles = {
         flexWrap: "wrap"
     },
     border: {
-        border: '1px solid black',
         minWidth: '33%',
         maxWidth: "100%",
         padding: '1em',
         margin: '1em',
-        minHeight: '140px'
+        boxShadow: "rgb(204, 204, 204) 1px -3px 15px 0px", /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    },
+    button: {
+        display: "block",
+        marginTop: "0.5em"
     }
 }
 
@@ -27,36 +35,42 @@ export default function Roadmap(){
 
     return( 
         <div style={styles.parent}>
-            <Box style={styles.border}>
-                <h2 style={styles.heading}>Quickstart</h2>
-                <p>Get up and running in two steps</p>
-                <Button variant="contained" color="primary">Quick start</Button>
-            </Box>
-            <div style={styles.border}>
-                <h2 style={styles.heading}>Tutorial</h2>
-                <p>If your are new, check out Tutorials</p>
-                <Button variant="contained" color="primary">Dive in</Button>
-            </div>
-            <div style={styles.border}>
-                <h2 style={styles.heading}>How To Guides</h2>
-                <p>For specific Guides, Go here</p>
-                <Button variant="contained" color="primary">Take me there</Button>
-            </div>
-            <div style={styles.border}>
-                <h2 style={styles.heading}>Modules</h2>
-                <p>Know Codebase better</p>
-                <Button variant="contained" color="primary">Get Started</Button>
-            </div>
-            <div style={styles.border}>
-                <h2 style={styles.heading}>Conceptual Guides</h2>
-                <p>For indepth Knowledge</p>
-                <Button variant="contained" color="primary">Start</Button>
-            </div>
-            <div style={styles.border}>
-                <h2 style={styles.heading}>FAQ</h2>
-                <p>Commonly Asked questions</p>
-                <Button variant="contained" color="primary">Navigate</Button>
-            </div>
+            <Card style={styles.border}>
+                <CardHeader style={styles.heading} title="Quickstart" />
+                <CardContent>Get up and running in two steps
+                    <Button variant="contained" color="primary" style={styles.button}>Quick start</Button>
+                </CardContent>
+            </Card>
+            <Card style={styles.border}>
+                <CardHeader style={styles.heading} title="Tutorials" />
+                <CardContent>Learn the basics of tools here
+                    <Button variant="contained" color="primary" style={styles.button}>Start</Button>
+                </CardContent>
+            </Card>
+            <Card style={styles.border}>
+                <CardHeader style={styles.heading} title="How To Guides" />
+                <CardContent>Purpose specific guides
+                    <Button variant="contained" color="primary" style={styles.button}>Go to Guides</Button>
+                </CardContent>
+            </Card>
+            <Card style={styles.border}>
+                <CardHeader style={styles.heading} title="Modules" />
+                <CardContent>Get to know tools better
+                    <Button variant="contained" color="primary" style={styles.button}>Deep Dive</Button>
+                </CardContent>
+            </Card>
+            <Card style={styles.border}>
+                <CardHeader style={styles.heading} title="Conceptual Guides" />
+                <CardContent>In depth knowledge
+                    <Button variant="contained" color="primary" style={styles.button}>Overview</Button>
+                </CardContent>
+            </Card>
+            <Card style={styles.border}>
+                <CardHeader style={styles.heading} title="FAQ" />
+                <CardContent>Commonly Asked Questions
+                    <Button variant="contained" color="primary" style={styles.button}>Navigate</Button>
+                </CardContent>
+            </Card>
         </div>
     )
 }
