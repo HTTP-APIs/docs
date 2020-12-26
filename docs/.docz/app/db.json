@@ -16,6 +16,24 @@
         "menu": [
           "First How to Guide"
         ]
+      },
+      {
+        "name": "Conceptual Guides",
+        "menu": [
+          "Conceptual Guide 1"
+        ]
+      },
+      {
+        "name": "Modules",
+        "menu": [
+          "Hydra in Depth"
+        ]
+      },
+      {
+        "name": "FAQ",
+        "menu": [
+          "Some Questions"
+        ]
       }
     ],
     "version": "0.1.0",
@@ -76,6 +94,48 @@
       }
     },
     {
+      "key": "src/content/FAQs/first.md",
+      "value": {
+        "name": "Some Questions",
+        "menu": "FAQ",
+        "id": "4a48a1d15c64d789680a44008caf5791",
+        "filepath": "src/content/FAQs/first.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/FAQs/first.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/FAQs/first.md",
+        "hidden": false,
+        "slug": "src-content-fa-qs-first",
+        "route": "/src-content-fa-qs-first",
+        "headings": [
+          {
+            "slug": "some-random-content",
+            "depth": 1,
+            "value": "Some Random content"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/content/conceptual-guides/first.md",
+      "value": {
+        "name": "Conceptual Guide 1",
+        "menu": "Conceptual Guides",
+        "id": "29afc96bd22c4e047c5240f3d29ab70c",
+        "filepath": "src/content/conceptual-guides/first.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/conceptual-guides/first.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/conceptual-guides/first.md",
+        "hidden": false,
+        "slug": "src-content-conceptual-guides-first",
+        "route": "/src-content-conceptual-guides-first",
+        "headings": [
+          {
+            "slug": "some-random-content",
+            "depth": 1,
+            "value": "Some Random content"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/content/how-to-guides/frist.md",
       "value": {
         "name": "First How to Guide",
@@ -97,6 +157,27 @@
       }
     },
     {
+      "key": "src/content/modules/first.md",
+      "value": {
+        "name": "Hydra in Depth",
+        "menu": "Modules",
+        "id": "d7b2ea8c76a6920bad539d280ca6fff6",
+        "filepath": "src/content/modules/first.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/modules/first.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/modules/first.md",
+        "hidden": false,
+        "slug": "src-content-modules-first",
+        "route": "/src-content-modules-first",
+        "headings": [
+          {
+            "slug": "some-random-content",
+            "depth": 1,
+            "value": "Some Random content"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/content/tutorial/first.md",
       "value": {
         "name": "First Tutorial",
@@ -113,22 +194,20 @@
             "slug": "first-tutorial",
             "depth": 1,
             "value": "First Tutorial"
+          },
+          {
+            "slug": "how-to-say-hello-in-python",
+            "depth": 2,
+            "value": "How to say hello in Python?"
+          },
+          {
+            "slug": "how-to-say-hello-in-python-again",
+            "depth": 2,
+            "value": "How to say hello in Python Again?"
           }
         ]
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/components/roadmap.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Roadmap",
-          "methods": [],
-          "actualName": "Roadmap"
-        }
-      ]
-    }
-  ]
+  "props": []
 }

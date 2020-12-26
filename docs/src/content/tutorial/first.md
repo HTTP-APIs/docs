@@ -5,4 +5,20 @@ menu: Tutorial
 
 # First Tutorial
 
-This is a first tutorial
+## How to say hello in Python?
+
+```python
+    import __hello__
+    def hello():
+        print("Hello there, again")
+
+```
+
+## How to say hello in Python Again?
+
+```python
+    import __hello__
+    def hello():
+        print("Hello there, again")
+
+```
