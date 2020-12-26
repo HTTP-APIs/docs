@@ -27,7 +27,7 @@ const styles = {
     },
     button: {
         display: "block",
-        marginTop: "0.5em"
+        marginTop: "1em"
     }
 }
 

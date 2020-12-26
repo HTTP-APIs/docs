@@ -65,9 +65,9 @@
         "menu": "",
         "headings": [
           {
-            "slug": "welcome-to-hydra-ecosystem-documentation",
+            "slug": "welcome-to-hydra-ecosystem",
             "depth": 1,
-            "value": "Welcome To Hydra Ecosystem Documentation"
+            "value": "Welcome To Hydra Ecosystem"
           }
         ]
       }
@@ -209,5 +209,17 @@
       }
     }
   ],
-  "props": []
+  "props": [
+    {
+      "key": "src/components/roadmap.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Roadmap",
+          "methods": [],
+          "actualName": "Roadmap"
+        }
+      ]
+    }
+  ]
 }
