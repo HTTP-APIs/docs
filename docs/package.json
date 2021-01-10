@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "hydra-ecosystem-docs",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "The docs for Hydra Ecosystem",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -14,7 +14,10 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "docz": "^2.3.2-alpha.0",
     "gatsby": "^2.26.1",
+    "gatsby-theme-docz": "^2.3.1-alpha.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
@@ -23,9 +26,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/http-apis/docs"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/http-apis/docs/issues"
   }
 }
