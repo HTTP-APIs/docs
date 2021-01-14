@@ -19,7 +19,7 @@ The smart client looks for the API Documentation(APIDoc) in the Link header, ext
 
 ## Linked Data
 
-[Tim Berners Lee](https://www.w3.org/DesignIssues/LinkedData.html) defines Linked data as:
+[Tim Berners Lee defines](https://www.w3.org/DesignIssues/LinkedData.html) Linked data as:
 
 > The Semantic Web isn't just about putting data on the web. It is about making links, so that a person or machine can explore the web of data. With linked data, when you have some of it, you can find other, related, data.
 
@@ -82,10 +82,6 @@ Define the API documentation(APIDoc) by using the tool `hydra-python-core`. `hyd
 
 It changes the existing APIDoc in JSON-LD to Python Classes which the tools like `hydra-python-agent` and `hydrus` can understand.
 
-<!-- How to deal with the openAPI format -->
-
-The APIDoc in the OpenAPI format should be first converted into the JSON-LD by the parser(`openapi-to-hydra`) before passing the APIDoc to the `hydrus`.
-
 ## 2. Passing the API documentation to `hydrus`
 
 `hydrus` accepts the APIDoc as a parameter and spins up a server, and exposes routes for every Hydra Class and Collection with the allowed operations as defined in the APIDoc. One can configure the authentication mechanism, and the database.
@@ -94,7 +90,7 @@ Hydrus can be used a Command Line Interface(CLI) and as a python package.
 
 ## 3. Using smart Clients to consume APIs
 
-Once the server is up and running, any smart agent like `hydra-python-agent` can consume the APIs .`hydra-python-agent` can be used in a REPL or as a python package to interact with `hydrus` or any http powered web server.
+Once the server is up and running, any smart agent like `hydra-python-agent` can consume the APIs. `hydra-python-agent` can be used in a REPL or as a python package to interact with `hydrus` or any http powered web server.
 
 ### To Summarise, from this document you:
 
