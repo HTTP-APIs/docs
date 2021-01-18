@@ -10,11 +10,11 @@ Therefore you can go through the [Docker container engine](https://docker-curric
 ## Running hydrus server
 > Make sure you have docker-compose installed in your system
 
-### Getting the [hydrus repository](https://github.com/HTTP-APIs/hydrus)
+#### Getting the [hydrus repository](https://github.com/HTTP-APIs/hydrus)
 ```bash
 git clone https://github.com/HTTP-APIs/hydrus
 ```
-### Change directory and run docker-compose
+#### Change directory and run docker-compose
 ```bash
 cd hydrus
 
@@ -22,12 +22,12 @@ docker-compose up --build
 ```
 > If you are using linux you may have to use sudo command with docker
 
-### Hydrus demo server is up and running at
+#### Hydrus demo server is up and running at
 ```bash
 http://localhost:8080/api/vocab
 ```
 
-### Adding your own Hydra Documentation
+## Adding your own Hydra Documentation
 
 You can serve your own Hydra API documentation:
 
