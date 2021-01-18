@@ -9,8 +9,6 @@ Therefore you can go through the [Docker container engine](https://docker-curric
 
 ## Running hydrus server
 > Make sure you have docker-compose installed in your system
-> ```bash
-> docker-compose -v
 
 ### Getting the [hydrus repository](https://github.com/HTTP-APIs/hydrus)
 ```bash
