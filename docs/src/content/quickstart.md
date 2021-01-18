@@ -22,7 +22,7 @@ cd hydrus
 
 docker-compose up --build
 ```
-> If you are using lunix you may have to use sudo command with docker
+> If you are using linux you may have to use sudo command with docker
 
 ### Hydrus demo server is up and running at
 ```bash
