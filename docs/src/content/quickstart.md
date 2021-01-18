@@ -24,5 +24,15 @@ docker-compose up --build
 
 ### Hydrus demo server is up and running at
 ```bash
-http://localhost:8080/api/vocab#Drone
+http://localhost:8080/api/vocab
 ```
+
+### Adding your own Hydra Documentation
+
+You can serve your own Hydra API documentation:
+
+* create a `doc.py` file as the ones in `examples/` directory containing your own ApiDoc
+* set the `APIDOC_REL_PATH` variable in `docker-compose.yml`. This should the relative path from the project root
+start-up the demo as above.
+  
+Your API Documentation will be served by the hydrus server.
