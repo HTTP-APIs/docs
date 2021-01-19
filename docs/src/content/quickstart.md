@@ -14,7 +14,7 @@ Therefore you can go through the [Docker container engine](https://docker-curric
 
 1. Getting the [hydrus repository](https://github.com/HTTP-APIs/hydrus)
 ```bash
-git clone https://github.com/HTTP-APIs/hydrus
+git clone https://github.com/HTTP-APIs/hydrus.git
 ```
 2. Change directory and run docker-compose
 ```bash
