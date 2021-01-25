@@ -8,7 +8,7 @@
       {
         "name": "Tutorial",
         "menu": [
-          "Setting up and Running Hydrus"
+          "Making CRUD operations with Hydrus"
         ]
       },
       {
@@ -94,27 +94,6 @@
       }
     },
     {
-      "key": "src/content/FAQs/first.md",
-      "value": {
-        "name": "Some Questions",
-        "menu": "FAQ",
-        "id": "4a48a1d15c64d789680a44008caf5791",
-        "filepath": "src/content/FAQs/first.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/FAQs/first.md",
-        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/FAQs/first.md",
-        "hidden": false,
-        "slug": "src-content-fa-qs-first",
-        "route": "/src-content-fa-qs-first",
-        "headings": [
-          {
-            "slug": "some-random-content",
-            "depth": 1,
-            "value": "Some Random content"
-          }
-        ]
-      }
-    },
-    {
       "key": "src/content/conceptual-guides/first.md",
       "value": {
         "name": "Conceptual Guide 1",
@@ -126,6 +105,27 @@
         "hidden": false,
         "slug": "src-content-conceptual-guides-first",
         "route": "/src-content-conceptual-guides-first",
+        "headings": [
+          {
+            "slug": "some-random-content",
+            "depth": 1,
+            "value": "Some Random content"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/content/FAQs/first.md",
+      "value": {
+        "name": "Some Questions",
+        "menu": "FAQ",
+        "id": "4a48a1d15c64d789680a44008caf5791",
+        "filepath": "src/content/FAQs/first.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/FAQs/first.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/FAQs/first.md",
+        "hidden": false,
+        "slug": "src-content-fa-qs-first",
+        "route": "/src-content-fa-qs-first",
         "headings": [
           {
             "slug": "some-random-content",
@@ -178,37 +178,62 @@
       }
     },
     {
-      "key": "src/content/tutorial/setting_and_running_hydrus.md",
+      "key": "src/content/tutorial/making-crud-operations-using-hydrus.md",
       "value": {
-        "name": "Setting up and Running Hydrus",
+        "name": "Making CRUD operations with Hydrus",
         "menu": "Tutorial",
-        "id": "11ac7d514ca51b933d0646a85cf5d21b",
-        "filepath": "src/content/tutorial/setting_and_running_hydrus.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/tutorial/setting_and_running_hydrus.md",
-        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/tutorial/setting_and_running_hydrus.md",
+        "id": "baa4e03d3fa819440dedcbc876605c3c",
+        "filepath": "src/content/tutorial/making-crud-operations-using-hydrus.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/tutorial/making-crud-operations-using-hydrus.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/tutorial/making-crud-operations-using-hydrus.md",
         "hidden": false,
-        "slug": "src-content-tutorial-setting-and-running-hydrus",
-        "route": "/src-content-tutorial-setting-and-running-hydrus",
+        "slug": "src-content-tutorial-making-crud-operations-using-hydrus",
+        "route": "/src-content-tutorial-making-crud-operations-using-hydrus",
         "headings": [
           {
-            "slug": "setting-up-and-running-hydrus",
+            "slug": "making-crud-operations-using-hydrus",
             "depth": 1,
-            "value": "Setting Up and Running hydrus"
+            "value": "Making CRUD Operations using Hydrus"
           },
           {
-            "slug": "using-hydrus-as-a-python-package",
+            "slug": "adding-a-resource",
             "depth": 2,
-            "value": "Using hydrus as a Python Package"
+            "value": "Adding a resource"
           },
           {
-            "slug": "using-hydrus-as-a-command-line-interface-cli",
+            "slug": "modifying-a-resource",
             "depth": 2,
-            "value": "Using hydrus as a Command Line Interface (CLI)"
+            "value": "Modifying a resource"
           },
           {
-            "slug": "in-this-tutorial-you-learned-about",
-            "depth": 3,
-            "value": "In this tutorial, you learned about:"
+            "slug": "getting-a-resource",
+            "depth": 2,
+            "value": "Getting a resource"
+          },
+          {
+            "slug": "creating-a-collection",
+            "depth": 2,
+            "value": "Creating a Collection"
+          },
+          {
+            "slug": "getting-a-collection",
+            "depth": 2,
+            "value": "Getting a Collection"
+          },
+          {
+            "slug": "updating-a-collection",
+            "depth": 2,
+            "value": "Updating a Collection"
+          },
+          {
+            "slug": "deleting-class-instances-and-collection-instances",
+            "depth": 2,
+            "value": "Deleting Class Instances and Collection Instances"
+          },
+          {
+            "slug": "in-this-document-you-learned-about",
+            "depth": 2,
+            "value": "In this document you learned about:"
           }
         ]
       }
