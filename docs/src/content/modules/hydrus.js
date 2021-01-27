@@ -1,26 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DOMPurify from 'dompurify';
 const fetch = require("node-fetch");
 
 export default class Docs extends React.Component{
 
-  state = {
-    finaldata: 1,
-  };
+  html = "";
 
-  async componentDidMount(){
-    const data = await fetch("https://readthedocs.org/api/v2/embed/?url=https://hydrus.readthedocs.io/en/latest/hydrus.html",
-
-  ).then(response => {return response.json()} );
-    this.setState({finaldata : data})
+  componentDidMount(){
+  fetch("https://cors-anywhere.herokuapp.com/"+"https://readthedocs.org/api/v2/embed/?project=hydra-python-core&version=develop&doc=index&section=Welcome to hydra-python-core’s documentation!"
+  ).then(response => {
+    return response.json();
+  }).then(data => {
+    this.html = data.content[0];
     console.log(data);
-    }
+  })
+  }
 
       render()
           {
           return(
-          <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.finaldata.content)}}></div>
+          <div  dangerouslySetInnerHTML={{
+            __html: this.html
+          }}>
+          </div>
         );
       }
 
