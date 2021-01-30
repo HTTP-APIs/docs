@@ -2,13 +2,14 @@
 name: How to use Authentication in Hydrus
 menu: How To Guides
 ---
+
 # How to Use Authentication and Authorization in Hydrus
 
-*>  You should know about `hydrus` in general. To get familiar with `hydrus`  and other tools of Hydra Ecosystem checkout the Tutorials section.*
+> You should know about `hydrus` in general. To get familiar with `hydrus` and other tools of Hydra Ecosystem checkout the Tutorials section.\*
 
-You will be able to understand and implement authentication and authorization in `hydrus` powered APIs after following through this guide. 
+You will be able to understand and implement authentication and authorization in `hydrus` powered APIs after following through this guide.
 
-`hydrus` provides an authentication procedure that allow operations on endpoints using a simple Two-Factor Authentication method.  Authentication is the verification of the credentials of the connection attempt. Two factor authentication is the process where users need to provide two different authentication factors to define themselves. This is generally considered more secure than single-factor authentication where user generally provides just one factor typically a password. Authorization involves checking resources that the user is authorized to access or modify via defined roles or claims.
+`hydrus` provides an authentication procedure that allows operations on endpoints using a simple Two-Factor Authentication method. Authentication is the verification of the credentials of the connection attempt. Two-factor authentication is the process where users need to provide two different authentication factors to define themselves. This is generally considered more secure than single-factor authentication where user generally provides just one factor typically a password. Authorization involves checking resources that the user is authorized to access or modify via defined roles or claims.
 
 ## Enabling Authentication in `hydrus`
 
@@ -26,7 +27,7 @@ from hydrus.utils import set_authentication, set_token
         # Use authentication for all requests
         with set_token(app, True):
         #Add token based authorization
-					
+
 
 #start the server
 ```
@@ -43,12 +44,12 @@ Currently, the API uses a basic two factor authentication to authenticate the us
 - The server responds with a `401 response` along with a nonce-value in the `X-Authentication` header as `X-Authentication: nonce-value` and a `basic authentication` challenge.
 - The client has to provide the user credentials in the `Authorization header` encoded in the basic authentication format (i.e base64) as `Authorization: Basic encoded-credentials` where the `encoded-credentials` string. This can be generated, say in REPL as:
 
-    ```bash
-    from base64 import b64encode
-    b64encode(b"username:password").decode("ascii")
-    ```
+  ```bash
+  from base64 import b64encode
+  b64encode(b"username:password").decode("ascii")
+  ```
 
-    where username is `id_`  and password is `paraphrase` passed in `add_user` method. The output of the given expression will be used in request header as `Authorization: Basic MTp0ZXN0.`
+  where username is `id_` and password is `paraphrase` passed in `add_user` method. The output of the given expression will be used in request header as `Authorization: Basic MTp0ZXN0.`
 
 - Along with the credentials, the client has to provide the nonce value obtained from the server in the `X-Authentication` header of the previous response. The **nonce** is **valid for 1 min** and for **1 request only**. The client shall get a unique nonce everytime the server sends a 401 response.
 - After successful authentication, the server responds with the user token(if enabled) or the response data.
@@ -64,7 +65,7 @@ Here is an example of server failed authentication response:
  Access-Control-Allow-Origin: *
  Content-Length: 48
  Date: Wed, 07 Mar 2018 18:28:04 GMT
- 
+
 {
   "401": "Need credentials to authenticate"
 }
@@ -100,7 +101,7 @@ HTTP/1.1 200 OK
  Access-Control-Allow-Origin: *
  Content-Length: 36
  Date: Wed, 07 Mar 2018 18:30:31 GMT
- 
+
 {
   "200": "User token generated"
 }
@@ -117,6 +118,3 @@ This is the sample format of a user request to access any protected endpoint:
 ```
 
 Congratulations! you just learnt how to use Authentication and Authorization in `hydrus`.
-
-
-

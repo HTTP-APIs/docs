@@ -14,7 +14,7 @@
       {
         "name": "How To Guides",
         "menu": [
-          "First How to Guide"
+          "How to use Authentication in Hydrus"
         ]
       },
       {
@@ -136,22 +136,37 @@
       }
     },
     {
-      "key": "src/content/how-to-guides/frist.md",
+      "key": "src/content/how-to-guides/authentication-hydrus.md",
       "value": {
-        "name": "First How to Guide",
+        "name": "How to use Authentication in Hydrus",
         "menu": "How To Guides",
-        "id": "070409004a82927d8120fd9a0d24ef51",
-        "filepath": "src/content/how-to-guides/frist.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/how-to-guides/frist.md",
-        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/how-to-guides/frist.md",
+        "id": "73dd5d6694a46091dde18352eab967ba",
+        "filepath": "src/content/how-to-guides/authentication-hydrus.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/how-to-guides/authentication-hydrus.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/how-to-guides/authentication-hydrus.md",
         "hidden": false,
-        "slug": "src-content-how-to-guides-frist",
-        "route": "/src-content-how-to-guides-frist",
+        "slug": "src-content-how-to-guides-authentication-hydrus",
+        "route": "/src-content-how-to-guides-authentication-hydrus",
         "headings": [
           {
-            "slug": "first-how-to-guides",
+            "slug": "how-to-use-authentication-and-authorization-in-hydrus",
             "depth": 1,
-            "value": "First How to guides"
+            "value": "How to Use Authentication and Authorization in Hydrus"
+          },
+          {
+            "slug": "enabling-authentication-in-hydrus",
+            "depth": 2,
+            "value": "Enabling Authentication in  hydrus"
+          },
+          {
+            "slug": "authentication-system-of-the-api",
+            "depth": 2,
+            "value": "Authentication system of the API"
+          },
+          {
+            "slug": "token-based-authorization-system",
+            "depth": 2,
+            "value": "Token based authorization system"
           }
         ]
       }
@@ -209,17 +224,5 @@
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/components/roadmap.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Roadmap",
-          "methods": [],
-          "actualName": "Roadmap"
-        }
-      ]
-    }
-  ]
+  "props": []
 }
