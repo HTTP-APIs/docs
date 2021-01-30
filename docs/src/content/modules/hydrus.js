@@ -6,8 +6,8 @@ export default class Docs extends React.Component{
 
   html = "";
 
-  componentDidMount(){
-  fetch("https://cors-anywhere.herokuapp.com/"+"https://readthedocs.org/api/v2/embed/?project=hydra-python-core&version=develop&doc=index&section=Welcome to hydra-python-core’s documentation!"
+  async componentDidMount(){
+  fetch("https://cors-anywhere.herokuapp.com/"+"https://readthedocs.org/api/v2/embed/?url=https://hydrus.readthedocs.io/en/latest/hydrus.html"
   ).then(response => {
     return response.json();
   }).then(data => {

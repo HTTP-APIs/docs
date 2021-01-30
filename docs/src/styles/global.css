@@ -6,3 +6,45 @@
 a {
   color: red;
 }
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+pre {
+  background-color: #f1f1f1;
+  font-size: 15px;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+dt {
+  display: table;
+  margin: 6px 0;
+      margin-top: 6px;
+  font-size: 90%;
+  line-height: normal;
+  background: #e7f2fa;
+  color: #2980B9;
+  border-top: solid 3px #6ab0de;
+  padding: 6px;
+  position: relative;
+}
+
+caption {
+ font : italic 85%/1 arial,sans-serif; 
+}
+tbody tr.row-odd{
+  background-color: #e1e4e5
+}
+table.docutils {
+  border: 1px solid gray;
+}
+thead {
+  border-bottom: 1px solid gray;
+  background-color:whitesmoke
+}
