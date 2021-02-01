@@ -26,7 +26,8 @@
       {
         "name": "Modules",
         "menu": [
-          "Hydra in Depth"
+          "hydra-python-core",
+          "hydrus"
         ]
       },
       {
@@ -58,7 +59,7 @@
         "route": "/",
         "id": "3ad5a6c267090705c2a1170d35652329",
         "filepath": "src/content/index.mdx",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/index.mdx",
+        "fullpath": "/home/raoashish10/Coding/hydraecosystem/docs/docs/src/content/index.mdx",
         "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/index.mdx",
         "hidden": false,
         "slug": "src-content-index",
@@ -78,7 +79,7 @@
         "name": "Quickstart",
         "id": "a021003eb870969f393873a11040aad4",
         "filepath": "src/content/quickstart.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/quickstart.md",
+        "fullpath": "/home/raoashish10/Coding/hydraecosystem/docs/docs/src/content/quickstart.md",
         "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/quickstart.md",
         "hidden": false,
         "slug": "src-content-quickstart",
@@ -100,7 +101,7 @@
         "menu": "FAQ",
         "id": "4a48a1d15c64d789680a44008caf5791",
         "filepath": "src/content/FAQs/first.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/FAQs/first.md",
+        "fullpath": "/home/raoashish10/Coding/hydraecosystem/docs/docs/src/content/FAQs/first.md",
         "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/FAQs/first.md",
         "hidden": false,
         "slug": "src-content-fa-qs-first",
@@ -121,7 +122,7 @@
         "menu": "Conceptual Guides",
         "id": "29afc96bd22c4e047c5240f3d29ab70c",
         "filepath": "src/content/conceptual-guides/first.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/conceptual-guides/first.md",
+        "fullpath": "/home/raoashish10/Coding/hydraecosystem/docs/docs/src/content/conceptual-guides/first.md",
         "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/conceptual-guides/first.md",
         "hidden": false,
         "slug": "src-content-conceptual-guides-first",
@@ -142,7 +143,7 @@
         "menu": "How To Guides",
         "id": "070409004a82927d8120fd9a0d24ef51",
         "filepath": "src/content/how-to-guides/frist.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/how-to-guides/frist.md",
+        "fullpath": "/home/raoashish10/Coding/hydraecosystem/docs/docs/src/content/how-to-guides/frist.md",
         "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/how-to-guides/frist.md",
         "hidden": false,
         "slug": "src-content-how-to-guides-frist",
@@ -157,22 +158,58 @@
       }
     },
     {
-      "key": "src/content/modules/first.md",
+      "key": "src/content/modules/hydra-python-core.mdx",
       "value": {
-        "name": "Hydra in Depth",
+        "name": "hydra-python-core",
         "menu": "Modules",
-        "id": "d7b2ea8c76a6920bad539d280ca6fff6",
-        "filepath": "src/content/modules/first.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/modules/first.md",
-        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/modules/first.md",
+        "id": "53d551a7a70ae4846b701d87e79d74c9",
+        "filepath": "src/content/modules/hydra-python-core.mdx",
+        "fullpath": "/home/raoashish10/Coding/hydraecosystem/docs/docs/src/content/modules/hydra-python-core.mdx",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/modules/hydra-python-core.mdx",
         "hidden": false,
-        "slug": "src-content-modules-first",
-        "route": "/src-content-modules-first",
+        "slug": "src-content-modules-hydra-python-core",
+        "route": "/src-content-modules-hydra-python-core",
         "headings": [
           {
-            "slug": "some-random-content",
+            "slug": "hydra-python-core",
             "depth": 1,
-            "value": "Some Random content"
+            "value": "hydra-python-core"
+          },
+          {
+            "slug": "doc_maker",
+            "depth": 2,
+            "value": "doc_maker"
+          },
+          {
+            "slug": "doc_writer",
+            "depth": 2,
+            "value": "doc_writer"
+          },
+          {
+            "slug": "how-to-use",
+            "depth": 2,
+            "value": "How to use"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/content/modules/hydrus.mdx",
+      "value": {
+        "name": "hydrus",
+        "menu": "Modules",
+        "id": "80f5e8617cd446e9b4ed01410da20942",
+        "filepath": "src/content/modules/hydrus.mdx",
+        "fullpath": "/home/raoashish10/Coding/hydraecosystem/docs/docs/src/content/modules/hydrus.mdx",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/modules/hydrus.mdx",
+        "hidden": false,
+        "slug": "src-content-modules-hydrus",
+        "route": "/src-content-modules-hydrus",
+        "headings": [
+          {
+            "slug": "hydrus",
+            "depth": 1,
+            "value": "hydrus"
           }
         ]
       }
@@ -184,7 +221,7 @@
         "menu": "Tutorial",
         "id": "7e38d0e1827b6eb2d95595ac83502ae1",
         "filepath": "src/content/tutorial/first.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/tutorial/first.md",
+        "fullpath": "/home/raoashish10/Coding/hydraecosystem/docs/docs/src/content/tutorial/first.md",
         "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/tutorial/first.md",
         "hidden": false,
         "slug": "src-content-tutorial-first",
@@ -211,13 +248,24 @@
   ],
   "props": [
     {
-      "key": "src/components/roadmap.js",
+      "key": "src/content/modules/hydra-python-core/usage.js",
       "value": [
         {
           "description": "",
-          "displayName": "Roadmap",
+          "displayName": "Docs",
           "methods": [],
-          "actualName": "Roadmap"
+          "actualName": "Docs"
+        }
+      ]
+    },
+    {
+      "key": "src/content/modules/hydra-python-core/doc_writer.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Docs",
+          "methods": [],
+          "actualName": "Docs"
         }
       ]
     }
