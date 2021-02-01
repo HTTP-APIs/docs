@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DOMPurify from 'dompurify';
 const fetch = require("node-fetch");
 
 export default class Docs extends React.Component{
@@ -35,8 +34,8 @@ export default class Docs extends React.Component{
           return(
            
             <div>
-            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.doc_writer_data.content)}}></div>
-            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.doc_writer_templates.content)}}></div>
+            <div dangerouslySetInnerHTML={{__html: (this.state.doc_writer_data.content)}}></div>
+            <div dangerouslySetInnerHTML={{__html: (this.state.doc_writer_templates.content)}}></div>
             </div>
         );
           }
