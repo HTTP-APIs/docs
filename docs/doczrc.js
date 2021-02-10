@@ -3,7 +3,7 @@ export default {
     menu:[
         "Welcome to Hydra Ecosystem Docs",
         "Quickstart",
-        {name: 'Tutorial', menu:['First Tutorial']},
+        {name: 'Tutorial', menu:['Workflow']},
         {name: 'How To Guides', menu: ['First How to Guide']},
         {name: 'Conceptual Guides', menu: ['Conceptual Guide 1']},
         {name: 'Modules', menu: ['Hydra in Depth']},
