@@ -8,7 +8,7 @@
       {
         "name": "Tutorial",
         "menu": [
-          "First Tutorial"
+          "Creating API Documentation"
         ]
       },
       {
@@ -178,48 +178,41 @@
       }
     },
     {
-      "key": "src/content/tutorial/first.md",
+      "key": "src/content/tutorial/create_api_doc.md",
       "value": {
-        "name": "First Tutorial",
+        "name": "Creating API Documentation",
         "menu": "Tutorial",
-        "id": "7e38d0e1827b6eb2d95595ac83502ae1",
-        "filepath": "src/content/tutorial/first.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/tutorial/first.md",
-        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/tutorial/first.md",
+        "id": "e13024441e7a729366df98d645136f5c",
+        "filepath": "src/content/tutorial/create_api_doc.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/tutorial/create_api_doc.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/tutorial/create_api_doc.md",
         "hidden": false,
-        "slug": "src-content-tutorial-first",
-        "route": "/src-content-tutorial-first",
+        "slug": "src-content-tutorial-create-api-doc",
+        "route": "/src-content-tutorial-create-api-doc",
         "headings": [
           {
-            "slug": "first-tutorial",
+            "slug": "creating-an-api-documentation-using-hydra",
             "depth": 1,
-            "value": "First Tutorial"
+            "value": "Creating an API Documentation using hydra"
           },
           {
-            "slug": "how-to-say-hello-in-python",
+            "slug": "setting-up-the-environment",
             "depth": 2,
-            "value": "How to say hello in Python?"
+            "value": "Setting up the Environment"
           },
           {
-            "slug": "how-to-say-hello-in-python-again",
+            "slug": "create-an-apidoc",
             "depth": 2,
-            "value": "How to say hello in Python Again?"
+            "value": "Create an APIDoc."
+          },
+          {
+            "slug": "in-this-section-you-learnt",
+            "depth": 3,
+            "value": "In this section, you learnt:"
           }
         ]
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/components/roadmap.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Roadmap",
-          "methods": [],
-          "actualName": "Roadmap"
-        }
-      ]
-    }
-  ]
+  "props": []
 }
