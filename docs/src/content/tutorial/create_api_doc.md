@@ -5,22 +5,37 @@ menu: Tutorial
 
 # Creating an API Documentation using hydra
 
-> This tutorial assumes you are familiar with _hydra, the general workflow_ and have a basic understanding of _python programming language._ To get familiar with these technology, follow the workflow tutorial.
+> This tutorial assumes you are familiar with _Hydra, the general workflow_ and have a basic understanding of _python programming language._ To get familiar with these technologies, follow the workflow tutorial.
 
-The agent or the server understands about the API after going through the API documentation. API documentation contains all the building blocks of an API, for example it can contain different routes, the supported Operations on the routes, the supported properties of the requests and responses. The properties can be changed during runtime which the smart-agents can understand. This eliminates the need of hard-coding the agents. This helps achieve loose-coupling between client and agents.
+The agent or the server understands the API after going through the API documentation. API documentation contains all the building blocks of an API. For example, it contains different routes, the supported Operations on the routes, the supported properties of the expected requests and responses. The properties can be changed during runtime which the smart-agents can understand. This eliminates the need of hard-coding the agents. This also helps achieve loose-coupling between client and agents.
 
 The core library is used to create API Documentation or to use an existing one. This tutorial deals with creating the new API Documentation.
 
-In this tutorial we will build an API that can show the list of movies and gives us the ability to add, edit, get or delete movies in the list.
+In this tutorial, we will build an API that can show the list of movies and gives us the ability to add, edit, get or delete movies in the list.
 
 ## Setting up the Environment
 
 1. [Install python3](https://www.python.org/downloads/) and [git](https://git-scm.com/downloads).
 2. Make sure you have a text editor installed, for example [Visual Studio code](https://code.visualstudio.com/docs/languages/python) or [Pycharm](https://www.jetbrains.com/pycharm/download/). This tutorial will use VS Code.
-3. Open the terminal and navigate to your development directory and run the command: `mkdir creating_api_doc` then run `cd creating_api_doc`. You should be inside the `creating_the_api_doc` folder.
-4. Create a python virtual environment by using `python3 -m venv venv`
-5. Activate the virtual environment by using `source venv/bin/activate`.
-6. Install the core library by doing `pip install git+https://github.com/HTTP-APIs/hydra-python-core.git#egg=hydra_python_core`
+3. Open the terminal and navigate to your development directory and run the command: 
+    ```
+    mkdir creating_api_doc
+    ``` 
+    ```
+    cd creating_api_doc
+    ```
+4. Create a python virtual environment by using
+    ```
+    python3 -m venv venv
+    ```
+5. Activate the virtual environment by using 
+    ```
+    source venv/bin/activate
+    ```
+6. Install the core library by doing 
+    ```
+    pip install git+https://github.com/HTTP-APIs/hydra-python-core.git#egg=hydra_python_core
+    ```
 7. Open your favourite text editor. To open Visual Studio code, in the `creating_api_doc` folder in the terminal run `code .`
 8. Create a new file `api_doc.py` in the `creating_api_doc_folder`
 
@@ -60,17 +75,17 @@ Classes have properties that allow them to store information related to the clas
 from hydra_python_core.doc_writer import HydraClassProp
 # Create new properties for the class
 # The URI of the class of the property
-prop1_uri = "http://localhost:8080/props#movie_name"
+prop1_uri = "http://schema.org/name"
 prop1_title = "movie_name"   # Title of the property
 movie_name_prop= HydraClassProp(prop1_uri, prop1_title,
                             required=True, read=True, write=True)
-prop2_uri = "http://localhost:8080/props#movie_director"
+prop2_uri = "http://schema.org/director"
 prop2_title = "movie_director"
 movie_director_prop = HydraClassProp(prop2_uri, prop1_title,
                             required=True, read=True, write=True)
 ```
 
-Besides the properties, classes have operations that can modify the data stored within their instances. These operation are defined as HydraClassOp and are stored in supportedOperation of the HydraClass
+Besides the properties, classes have operations that can modify the data stored within their instances. These operations are defined as HydraClassOp and are stored in supportedOperation property of the HydraClass
 
 ```python
 from hydra_python_core.doc_writer import HydraClassOp, HydraStatus
@@ -145,7 +160,7 @@ delete = HydraClassOp(op_delete,
                    op_delete_status)
 ```
 
-Add the supported properties and supported operations to the Movie class.
+Add the supported properties and the supported operations to the Movie class.
 
 ```python
 movie_class_.add_supported_prop(movie_name_prop)
@@ -239,4 +254,4 @@ The complete script for a sample API Documentation can be found in `samples/doc_
 3. About Hydra concepts
 4. How to create your own APIDoc using `hydra-python-core` library.
 
-Now, head on to [Setting up and running Hydrus➡️](https://google.com)
+Now, head on to [Setting up and running Hydrus ➡️](https://google.com)
