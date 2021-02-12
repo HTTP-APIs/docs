@@ -7,7 +7,8 @@ menu: How To Guides
 > You should be familiar with creating API docs.
 
 After defining API Documentation hydrus needs to set up a database for storing resources of API,
-hydrus has its own database models that are generic and can be used for most APIs.
+hydrus has its own database [models](https://github.com/HTTP-APIs/hydrus/blob/master/hydrus/data/db_models.py)
+that are generic and can be used for most APIs.
 
 The database models use SQLAlchemy as an ORM Layer mapping relations to Python Classes and Objects.
 A good reference for the ORM can be found [here](https://docs.sqlalchemy.org/en/13/orm/tutorial.html).
