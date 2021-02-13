@@ -9,7 +9,7 @@ menu: Tutorial
 
 You will learn about `hydrus` and be able to set up and run `hydrus` in two different ways after following this document.
 
-[`hydrus`](https://github.com/HTTP-APIs/hydrus) is a generic server that can serve required data and metadata(in the form of API documentation) to a client over HTTP. It utilises the power of Linked Data to create powerful REST APIs to serve data. Hydrus uses the Hydra(W3C) standard for the creation and documentation of its APIs.
+[`hydrus`](https://github.com/HTTP-APIs/hydrus) is a generic server that can serve required data and metadata(in the form of API documentation) to a client over HTTP. It utilizes the power of Linked Data to create powerful REST APIs to serve data. Hydrus uses the Hydra(W3C) standard for the creation and documentation of its APIs.
 
 `hydrus` can be used in two different ways.
 
@@ -25,8 +25,8 @@ To use it as a python package follow the steps below:
 1. Navigate into the `creating_api_doc` directory as created in tutorial 2 [Insert link]
 2. Activate the virtual environment by typing `source activate`
 3. Create a new file `index.py`. This file will use `hydrus` to spin up a semantic web server.
-4. Run `pip install git+https://github.com/HTTP-APIs/hydrus.git#egg=hydrus` (This step can be little tricky as hydrus depends on few platform dependent packages, be sure to check out FAQs if you face any problem).
-5. In the `index.py` file start by importing required modules.
+4. Run `pip install git+https://github.com/HTTP-APIs/hydrus.git#egg=hydrus` (This step can be tricky as `hydrus` depends on few platform-dependent packages, be sure to check out FAQs if you face any problem).
+5. In the `index.py` file start by importing the required modules.
 
 ```python
 from sqlalchemy import create_engine
@@ -35,18 +35,19 @@ from sqlalchemy.orm import sessionmaker
 from hydrus.app_factory import app_factory
 from hydrus.utils import set_session, set_doc, set_hydrus_server_url, set_api_name
 from hydra_python_core import doc_maker
-from hydrus.data.db_models import Base
+from hydrus.data.db_models import Base, create_database_tables
 from api_doc_output import doc
 ```
 
 The above code sample imports:
 
-- `create _engine` - The database models use SQLAlchemy as an ORM Layer, mapping relations to Python Classes and Objects. The `create_engine` method creates the Engine. An Engine is the starting point for any SQLAlchemy Application.This engine acts as a connection on which we can create sessions to interact with the database.
+- `create _engine` - The database models use SQLAlchemy as an ORM Layer, mapping relations to Python Classes and Objects. The `create_engine` method creates the engine. An Engine is the starting point for any SQLAlchemy Application. This engine acts as a connection on which we can create sessions to interact with the database.
 - `sessionmaker` - It generates a new session when invoked.
-- `app_factory` - This method takes in API_NAME has a parameter. It creates an API with all routes of the app directed at /[API_NAME].
+- `app_factory` - This method takes in API_NAME as a parameter. It creates an API with all routes of the app directed at /[API_NAME].
 - `set_session`, `set_doc`, `set_hydrus_server_url`, `set_api_name` are setters which set DB session, docs, server_url and api_name respectively. These methods put together all the things required to run `hydrus`.
 - `doc_maker` from the [core library](https://github.com/HTTP-APIs/hydra-python-core) to create the APIDoc.
-- `Base` class constructs a base class for declarative class definition. `hydrus` defines models by subclassing the Base class. `hydrus` has its own database models that are generic and can be used for most of the APIs.
+- `Base` class constructs a base class for the declarative class definition.
+  `hydrus` defines models by sub-classing the Base class. `hydrus` has its database model that is unique to the provided APIDoc. `create_database_tables` is a helper method to create all the tables according to the APIDoc.
 - `doc` - The APIDoc of movie API generated in Tutorial 2 [Insert Link]
 
 6. Define params, add the models to DB and start the DB session:
@@ -63,22 +64,27 @@ API_NAME = "api"
 apidoc = doc_maker.create_doc(doc, HYDRUS_SERVER_URL, API_NAME)
 # Define the database connection. Any Database can be used.
 engine = create_engine('sqlite:///database.db')
-# Add the required Models to the database
+# Get all the classes from the doc
+classes = doc_parse.get_classes(apidoc)
+# Drop all existing models and add the new ones.
+Base.metadata.drop_all(engine)
 Base.metadata.create_all(engine)
+# create the DB tables
+create_database_tables(classes)
 # Start a session with the DB and create all classes needed by the APIDoc
 session = sessionmaker(bind=engine)()
 ```
 
-The above code sample: <!-- Explain Better -->
+The above code sample:
 
-- Assigns hydrus_server_url to “http://localhost:8080”. This sets the base url in the APIDoc.
-- Assigns the api_name to “api”.
-- Creates the APIDoc from the `doc_maker` module by hydra_python_core. It converts the doc into Python classes which hydrus and agent can understand.
+- Assigns hydrus_server_url to “http://localhost:8080”. This sets the base URL in the APIDoc.
+- Assigns the api_name to `api`.
+- Creates the APIDoc from the `doc_maker` module by hydra_python_core. It converts the doc into Python classes which the `hydrus` and agent can understand.
 - Creates the SQL Alchemy engine. (Note that we have used SQLite as a database here, but other databases can also be used here. List of supported databases [here](https://docs.sqlalchemy.org/en/13/orm/tutorial.html).)
 - Adds all the predefined models to the database.
-- Starts the Database session.
+- Starts the database session.
 
-7. Create a hydrus app and start the server
+7. Create a `hydrus` app and start the server
 
 ```python
 
@@ -99,9 +105,13 @@ with set_api_name(app, API_NAME):
 
 The above code sample:
 
-- Creates a new hydrus app and gives it a name.
+- Creates a new `hydrus` app and gives it a name.
 - Calls the setter functions defined in the `hydrus.utils` module, the use of these pluggable methods requires an app context which is a variant of the Python context, similar to the request context in most servers. Due to this, the Python keyword with must be used to create a context in which the application must run.
 - Finally, runs the app at http://localhost:8080/api in debug mode.
+
+`hydrus` creates and sets up the database out of the box. For the APIDoc used in this document following DB structure is created:
+
+![DB](../../../static/images/db-structure.png)
 
 > Note: The `hydrus` app is a modified instance of the Flask app with the required operations and routes predefined. All options and operations on the app object will be the same as those done in the Flask app.
 
@@ -128,8 +138,8 @@ To use `hydrus` as CLI, follow the steps:
 
 ### In this tutorial, you learned about:
 
-1. hydrus - a semantic web server
-2. Using hydrus as python package
-3. Using hydrus as Command Line Interface.
+1. `hydrus` - a semantic web server
+2. Using `hydrus` as python package
+3. Using `hydrus` as Command Line Interface.
 
-Now move on to the next tutorial *Using hydrus to make CRUD operations* ➡️
+Now move on to the next tutorial _Using hydrus to make CRUD operations_ ➡️
