@@ -1,5 +1,5 @@
 ---
-name:  IriTemplate
+name:  IRI Templates in Hydra
 menu: Conceptual Guides
 ---
 
@@ -17,7 +17,7 @@ by those clients to construct valid IRIs. As the title of this article suggests,
 working of `IriTemplate` in detail.
 
 ### Example
-```
+```json
 {
     "@context": "http://localhost:8080/serverapi/context.jsonld",
     "@id": "https://tiles.openplanner.team/planet",
@@ -95,7 +95,7 @@ if (colletion.search) {
 ```
 With the help of all these, the Hydra enabled client can expand the IRI template with provided values of variables. If in the future the URI is changed from `https://c.tile.openstreetmap.org/{z}/{x}/{y}` to `https://c.tile.openstreetmap.org/{z}/{y}/{x}`
 the client won't have any difficulty adjusting to it. The client will receive the following kind of response from the server
-```
+```json
 {
     "@context": "http://localhost:8080/serverapi/context.jsonld",
     "@id": "https://tiles.openplanner.team/planet",
