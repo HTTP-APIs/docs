@@ -5,7 +5,7 @@ export default {
         "Quickstart",
         {name: 'Tutorial', menu:['First Tutorial']},
         {name: 'How To Guides', menu: ['First How to Guide']},
-        {name: 'Conceptual Guides', menu: ['Analysis of Heracles.ts']},
+        {name: 'Conceptual Guides', menu: ['IriTemplate']},
         {name: 'Modules', menu: ['Hydra in Depth']},
         {name: 'FAQ', menu: ['Some Questions']},
     ],
