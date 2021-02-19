@@ -5,7 +5,7 @@ export default {
         "Quickstart",
         {name: 'Tutorial', menu:['First Tutorial']},
         {name: 'How To Guides', menu: ['First How to Guide']},
-        {name: 'Conceptual Guides', menu: ['Conceptual Guide 1']},
+        {name: 'Conceptual Guides', menu: ['Pagination in Hydra']},
         {name: 'Modules', menu: ['Hydra in Depth']},
         {name: 'FAQ', menu: ['Some Questions']},
     ],
