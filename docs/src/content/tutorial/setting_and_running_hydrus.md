@@ -5,11 +5,11 @@ menu: Tutorial
 
 # Setting Up and Running hydrus
 
-> This tutorial assumes you have a basic understanding of Python programming language, Hydra, API documentation created using Hydra, Linked Data, web servers, and REST APIs.
+> This tutorial assumes you have a basic understanding of Python programming language, [Hydra](http://www.hydra-cg.com/spec/latest/core/), API documentation created using [Hydra](http://www.hydra-cg.com/spec/latest/core/), Linked Data, web servers, and REST APIs.
 
 You will learn about `hydrus` and be able to set up and run `hydrus` in two different ways after following this document.
 
-[`hydrus`](https://github.com/HTTP-APIs/hydrus) is a generic server that can serve required data and metadata(in the form of API documentation) to a client over HTTP. It utilizes the power of Linked Data to create powerful REST APIs to serve data. Hydrus uses the Hydra(W3C) standard for the creation and documentation of its APIs.
+[`hydrus`](https://github.com/HTTP-APIs/hydrus) is a generic server that can serve required data and metadata(in the form of API documentation) to a client over HTTP. It utilizes the power of Linked Data to create powerful REST APIs to serve data. Hydrus uses the [Hydra(W3C)](http://www.hydra-cg.com/spec/latest/core/) standard for the creation and documentation of its APIs.
 
 `hydrus` can be used in two different ways.
 
