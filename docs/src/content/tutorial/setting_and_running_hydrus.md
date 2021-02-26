@@ -14,7 +14,7 @@ You will learn about `hydrus` and be able to set up and run `hydrus` in two diff
 `hydrus` can be used in two different ways.
 
 1. As a Python package.
-2. As a Command Line Interface. (CLI).
+2. As a Command Line Interface (CLI).
 
 ## Using hydrus as a Python Package
 
