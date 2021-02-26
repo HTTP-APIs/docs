@@ -5,7 +5,7 @@ menu: Tutorial
 
 # Setting Up and Running hydrus
 
-> This tutorial assumes you have a basic understanding of python programming language, Hydra, API documentation created using Hydra, Linked Data, web servers, and REST APIs.
+> This tutorial assumes you have a basic understanding of Python programming language, Hydra, API documentation created using Hydra, Linked Data, web servers, and REST APIs.
 
 You will learn about `hydrus` and be able to set up and run `hydrus` in two different ways after following this document.
 
@@ -13,14 +13,14 @@ You will learn about `hydrus` and be able to set up and run `hydrus` in two diff
 
 `hydrus` can be used in two different ways.
 
-1. As a python package.
+1. As a Python package.
 2. As a Command Line Interface. (CLI).
 
 ## Using hydrus as a Python Package
 
-`hydrus` makes creating and spinning up a semantic web server easy by giving the developers ability to import it as a python package. It provides intuitive interfaces to work with and can be easily configured according to one's preferences.
+`hydrus` makes creating and spinning up a semantic web server easy by giving the developers ability to import it as a Python package. It provides intuitive interfaces to work with and can be easily configured according to one's preferences.
 
-To use it as a python package follow the steps below:
+To use it as a Python package follow the steps below:
 
 1. Navigate into the `creating_api_doc` directory as created in tutorial 2 [Insert link]
 2. Activate the virtual environment by typing `source activate`
@@ -28,7 +28,7 @@ To use it as a python package follow the steps below:
 4. Run `pip install git+https://github.com/HTTP-APIs/hydrus.git#egg=hydrus` (This step can be tricky as `hydrus` depends on few platform-dependent packages, be sure to check out FAQs if you face any problem).
 5. In the `index.py` file start by importing the required modules.
 
-```python
+```Python
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -41,7 +41,7 @@ from api_doc_output import doc
 
 The above code sample imports:
 
-- `create _engine` - The database models use SQLAlchemy as an ORM Layer, mapping relations to Python Classes and Objects. The `create_engine` method creates the engine. An Engine is the starting point for any SQLAlchemy Application. This engine acts as a connection on which we can create sessions to interact with the database.
+- `create _engine` - The database models use SQLAlchemy as an ORM Layer, mapping relations to python Classes and Objects. The `create_engine` method creates the engine. An Engine is the starting point for any SQLAlchemy Application. This engine acts as a connection on which we can create sessions to interact with the database.
 - `sessionmaker` - It generates a new session when invoked.
 - `app_factory` - This method takes in API_NAME as a parameter. It creates an API with all routes of the app directed at /[API_NAME].
 - `set_session`, `set_doc`, `set_hydrus_server_url`, `set_api_name` are setters which set DB session, docs, server_url and api_name respectively. These methods put together all the things required to run `hydrus`.
@@ -79,7 +79,7 @@ The above code sample:
 
 - Assigns hydrus_server_url to “http://localhost:8080”. This sets the base URL in the APIDoc.
 - Assigns the api_name to `api`.
-- Creates the APIDoc from the `doc_maker` module by hydra_python_core. It converts the doc into Python classes which the `hydrus` and agent can understand.
+- Creates the APIDoc from the `doc_maker` module by hydra_python_core. It converts the doc into python classes which the `hydrus` and agent can understand.
 - Creates the SQL Alchemy engine. (Note that we have used SQLite as a database here, but other databases can also be used here. List of supported databases [here](https://docs.sqlalchemy.org/en/13/orm/tutorial.html).)
 - Adds all the predefined models to the database.
 - Starts the database session.
@@ -106,7 +106,7 @@ with set_api_name(app, API_NAME):
 The above code sample:
 
 - Creates a new `hydrus` app and gives it a name.
-- Calls the setter functions defined in the `hydrus.utils` module, the use of these pluggable methods requires an app context which is a variant of the Python context, similar to the request context in most servers. Due to this, the Python keyword with must be used to create a context in which the application must run.
+- Calls the setter functions defined in the `hydrus.utils` module, the use of these pluggable methods requires an app context which is a variant of the python context, similar to the request context in most servers. Due to this, the python keyword with must be used to create a context in which the application must run.
 - Finally, runs the app at http://localhost:8080/api in debug mode.
 
 `hydrus` creates and sets up the database out of the box. For the APIDoc used in this document following DB structure is created:
@@ -129,7 +129,7 @@ To use `hydrus` as CLI, follow the steps:
 
 1. Install hydrus from git: `git clone https://github.com/hydrus.git`
 2. Navigate to `hydrus` directory by running `cd hydrus`
-3. Create a virtual environment by `python3 -m venv venv`
+3. Create a virtual environment by `Python3 -m venv venv`
 4. Activate the virtual environment by `source activate`
 5. Install requirements of hydrus by: `pip install -r requirements.txt` <!-- Or install by poetry -->
 6. Run `python3 setup.py install`
@@ -139,7 +139,7 @@ To use `hydrus` as CLI, follow the steps:
 ### In this tutorial, you learned about:
 
 1. `hydrus` - a semantic web server
-2. Using `hydrus` as python package
+2. Using `hydrus` as Python package
 3. Using `hydrus` as Command Line Interface.
 
 Now move on to the next tutorial _Using hydrus to make CRUD operations_ ➡️
