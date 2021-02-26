@@ -20,7 +20,7 @@
       {
         "name": "Conceptual Guides",
         "menu": [
-          "Conceptual Guide 1"
+          "Introduction to RDF and Linked Data"
         ]
       },
       {
@@ -115,22 +115,27 @@
       }
     },
     {
-      "key": "src/content/conceptual-guides/first.md",
+      "key": "src/content/conceptual-guides/intro_to_rdf_linked_data.md",
       "value": {
-        "name": "Conceptual Guide 1",
+        "name": "Introduction to RDF and Linked Data",
         "menu": "Conceptual Guides",
-        "id": "29afc96bd22c4e047c5240f3d29ab70c",
-        "filepath": "src/content/conceptual-guides/first.md",
-        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/conceptual-guides/first.md",
-        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/conceptual-guides/first.md",
+        "id": "7d92d01fd0629805851101469365a034",
+        "filepath": "src/content/conceptual-guides/intro_to_rdf_linked_data.md",
+        "fullpath": "/Users/priyanshunayan/Developer/gsoc/docs/docs/src/content/conceptual-guides/intro_to_rdf_linked_data.md",
+        "link": "https://github.com/http-apis/docs/edit/master/docs/src/content/conceptual-guides/intro_to_rdf_linked_data.md",
         "hidden": false,
-        "slug": "src-content-conceptual-guides-first",
-        "route": "/src-content-conceptual-guides-first",
+        "slug": "src-content-conceptual-guides-intro-to-rdf-linked-data",
+        "route": "/src-content-conceptual-guides-intro-to-rdf-linked-data",
         "headings": [
           {
-            "slug": "some-random-content",
-            "depth": 1,
-            "value": "Some Random content"
+            "slug": "resource-description-framework-rdf",
+            "depth": 2,
+            "value": "Resource Description Framework (RDF)"
+          },
+          {
+            "slug": "linked-data",
+            "depth": 2,
+            "value": "Linked Data"
           }
         ]
       }
@@ -209,17 +214,5 @@
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/components/roadmap.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Roadmap",
-          "methods": [],
-          "actualName": "Roadmap"
-        }
-      ]
-    }
-  ]
+  "props": []
 }

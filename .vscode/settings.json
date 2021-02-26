@@ -1,0 +1,27 @@
+{
+    "grammarly.overrides": [
+        {
+            "files": [
+                "**/docs/src/content/how-to-guides/authentication-hydrus.md"
+            ],
+            "config": {
+                "audience": "general",
+                "dialect": "american",
+                "domain": "technical",
+                "emotions": [
+                    "neutral",
+                    "respectful",
+                    "friendly",
+                    "analytical"
+                ],
+                "goals": [
+                    "inform",
+                    "describe"
+                ]
+            }
+        }
+    ],
+    "cSpell.words": [
+        "hydrus"
+    ]
+}
